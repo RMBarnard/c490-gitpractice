@@ -1,8 +1,8 @@
 import my_object
 
-class MyDerivedObject(MyObject):
-    def --init(self):
-        super().init()
+class MyDerivedObject(my_object.MyObject):
+    def __init__(self):
+        super().__init__()
 
     def __str__(self):
         return self.greeting
